@@ -11,6 +11,10 @@ execute as @a at @s if predicate survival_chaos:random/ten_percent run playsound
 execute as @a at @s if predicate survival_chaos:random/ten_percent run summon zombie ~10 ~ ~10
 execute as @a at @s if predicate survival_chaos:random/ten_percent run summon skeleton ~-10 ~ ~-10
 
+# Sleep disruption - chance for bed to spawn phantoms or zombies
+execute as @a[nbt={SleepTimer:100s}] at @s if predicate survival_chaos:random/thirty_percent run function survival_chaos:night/sleep_disruption
+
 # Eerie particle effects
 execute as @a at @s run particle minecraft:smoke ~ ~1 ~ 3 2 3 0.01 5
 execute as @a at @s if predicate survival_chaos:random/thirty_percent run particle minecraft:soul_fire_flame ~ ~1 ~ 2 1 2 0.02 3
+
