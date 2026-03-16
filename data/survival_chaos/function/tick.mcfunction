@@ -37,3 +37,11 @@ execute if score #blood_moon_active survival_chaos matches 1 if score #torch_tim
 # --- Terrifying Mob Behaviors ---
 function survival_chaos:mobs/weeping_zombie_behavior
 
+# --- Sanity System (every 100 ticks = 5 seconds) ---
+scoreboard players add #sanity_timer survival_chaos 1
+execute if score #sanity_timer survival_chaos matches 100.. run function survival_chaos:horror/sanity_check
+execute if score #sanity_timer survival_chaos matches 100.. run scoreboard players set #sanity_timer survival_chaos 0
+
+# --- Environmental Horror (every 200 ticks = 10 seconds) ---
+execute if score #config_paranoia_enabled survival_chaos matches 1 if score #paranoia_timer survival_chaos matches 100 run function survival_chaos:horror/environmental_horror
+

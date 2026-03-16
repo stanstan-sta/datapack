@@ -56,6 +56,26 @@ Encounter horrifying variants of normal mobs:
 - **Ghost Spiders:** Invisible spiders with only glowing eyes visible
 - **Silent Creepers:** Creepers that make no sound before exploding
 
+### 🧠 Sanity System
+Your mental state deteriorates over time and affects your experience:
+- **Sanity Loss:** Lose sanity when underground (below Y=50) or not sleeping
+- **Sanity Restoration:** Recover sanity by sleeping
+- **Low Sanity Effects (below 30):**
+  - Elder Guardian jumpscare with mining fatigue
+  - Visual distortions (nausea)
+  - Auditory hallucinations (ghast screams, enderman sounds)
+  - Soul particle effects
+- **Critical Sanity (below 10):** More frequent and severe effects
+
+### 🌫️ Environmental Horror
+Random environmental effects create a claustrophobic atmosphere:
+- **Flash Blindness:** Sudden blindness with thunder sounds
+- **Dense Fog:** Darkness effect with thick smoke particles
+- **Corrupted Bed:** During Blood Moon or low sanity:
+  - 50% chance bed explodes with TNT
+  - 50% chance teleports you to a dark cave with blindness
+- Triggers during paranoia checks
+
 ### 💀 Mob Head Drops
 Kill these mobs for a chance to collect their heads as trophies:
 - **Base Chance:** 10% per kill
