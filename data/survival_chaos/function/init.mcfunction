@@ -37,3 +37,5 @@ execute as @a run scoreboard players set @s survival_chaos 0
 
 # Announce pack loaded
 tellraw @a [{"text":"[","color":"gray"},{"text":"Survival Chaos","color":"gold","bold":true},{"text":"] ","color":"gray"},{"text":"Datapack loaded! Prepare for chaos...","color":"yellow"}]
+tellraw @a [{"text":"[","color":"gray"},{"text":"Survival Chaos","color":"gold","bold":true},{"text":"] ","color":"gray"},{"text":"Use ","color":"gray"},{"text":"/function survival_chaos:config/menu","color":"aqua","clickEvent":{"action":"run_command","value":"/function survival_chaos:config/menu"},"hoverEvent":{"action":"show_text","value":"Click to open config"}},{"text":" to customize settings","color":"gray"}]
+
